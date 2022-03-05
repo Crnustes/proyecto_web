@@ -1,0 +1,19 @@
+{
+  "name": "proyecto_web",
+  "version": "1.0.0",
+  "description": "Proyecto Coder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crnustes/proyecto_web.git"
+  },
+  "author": "Cristian Nustes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crnustes/proyecto_web/issues"
+  },
+  "homepage": "https://github.com/Crnustes/proyecto_web#readme"
+}
