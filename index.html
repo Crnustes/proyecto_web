@@ -1,51 +1,453 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Tecnic</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img src="img/logo.png" alt="" width="80px"> </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Acerca de</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portafolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
 
-                    <button class="btn btn-outline-success" type="submit">Contacto</button>
+</head>
+
+<body>
+    <header class="menu_principal">
+
+        <div>
+            <a href="index.html"> <img src="img/logo.png" alt="logo" srcset="" class="logoImg"></a>
+        </div>
+        <div>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/sobre_nosotros.html">Nosotros</a></li>
+                    <li><a href="pages/portafolio.html">Portafolio</a></li>
+                    <li><a href="pages/galeria.html">Galeria</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+                <img src="../img/iconos/menu.png" alt="" class="menuhamburger">
+            </nav>
+            
+        </div>
+
+
+        <div>
+            <a href="#" class="cta"> <img src="img/iconos/github.png" alt="github"> </a>
+            <a href="#" class="cta"> <img src="img/iconos/linkedin.png" alt="linkedin"> </a>
+            <a href="#" class="cta"> <img src="img/iconos/whatsapp.png" alt="whatsapp"> </a>
+        </div>
+    </header>
+    <section>
+
+        <div class="contenedor">
+            <div class="wrap">
+                <div class="box">
+                    <span>Nosotros hacemos:</span>
+                    <h1>Creación de Páginas Web</h1>
+                    <p>&nbsp </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="pages/contacto.html"><button class="botones">Contacto </button></a>
 
                 </div>
             </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="sub-title">
+            <h2 class="subtitle">Nuestros Servicios<span class="point">.</span> </h2>
+            <p class="copy__section">Tenemos diferenctes servicios para tu negocio</p>
+
+        </div>
+        <section class="services">
+            <div class="container">
+
+
+                <article class="container_cards">
+                    <div class="card">
+                        <img src="img/iconos/Creacion de páginas web.png" alt="" class="card__img">
+                        <div class="cards__text">
+                            <span class="card__list">Siempre las mejores web</span>
+                            <p>&nbsp </p>
+                            <h3 class="card__title_sv">Desarrollo Web</h3>
+                            <p>&nbsp </p>
+                            <p class="card__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                                veritatis hic exercitationem obcaecati dolore nobis error, suscipit adipisci doloremque
+                                at repellendus tempore fugit quibusdam ex vel nulla corrupti animi? Veniam!</p>
+                            <a href="pages/contacto.html"><button class="botones">Contacto </button></a>
+
+
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="img/iconos/Diseño web.png" alt="" class="card__img">
+                        <div class="cards__text">
+                            <span class="card__list">Siempre las mejores web</span>
+                            <p>&nbsp </p>
+                            <h3 class="card__title_sv">Diseño <br>web</h3>
+                            <p>&nbsp </p>
+                            <p class="card__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                                veritatis hic exercitationem obcaecati dolore nobis error, suscipit adipisci doloremque
+                                at repellendus tempore fugit quibusdam ex vel nulla corrupti animi? Veniam!</p>
+                            <a href="pages/contacto.html"><button class="botones">Contacto </button></a>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="img/iconos/Creacion de contenido.png" alt="" class="card__img">
+                        <div class="cards__text">
+                            <span class="card__list">Siempre las mejores web</span>
+                            <p>&nbsp </p>
+                            <h3 class="card__title_sv">Creación de Contenido</h3>
+                            <p>&nbsp </p>
+                            <p class="card__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                                veritatis hic exercitationem obcaecati dolore nobis error, suscipit adipisci doloremque
+                                at repellendus tempore fugit quibusdam ex vel nulla corrupti animi? Veniam!</p>
+                            <a href="pages/contacto.html"><button class="botones">Contacto </button></a>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <div class="sub-title">
+            <h2 class="subtitle">Nuestros objetivos<span class="point">.</span> </h2>
+            <p class="copy__section">Queremos trabajar a la mano con los clientes, y juntos tenemos los siguientes
+                objetivos</p>
+
+        </div>
+        <section class="objetivos__container container">
+
+            <article class="container-bg">
+                <div class="card__obj">
+
+                    <div class="cards__text__obj">
+                        <h3 class="card__title">Objetivo. <span class="numero__obj">1</span></h3>
+                        <img src="img/iconos/obj1.png" alt="" class="icon__obj">
+                        <p class="card__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                            veritatis hic exercitationem obcaecati dolore nobis error, suscipit adipisci doloremque
+                            at repellendus tempore fugit quibusdam ex vel nulla corrupti animi? Veniam!</p>
+
+                    </div>
+                </div>
+                <div class="card__obj">
+
+                    <div class="cards__text__obj">
+                        <h3 class="card__title">Objetivo. <span class="numero__obj">2</span></h3>
+                        <img src="img/iconos/obj2.png" alt="" class="icon__obj">
+                        <p class="card__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                            veritatis hic exercitationem obcaecati dolore nobis error, suscipit adipisci doloremque
+                            at repellendus tempore fugit quibusdam ex vel nulla corrupti animi? Veniam!</p>
+                    </div>
+                </div>
+                <div class="card__obj">
+
+                    <div class="cards__text__obj">
+                        <h3 class="card__title">Objetivo. <span class="numero__obj">3</span></h3>
+                        <img src="img/iconos/obj3.png" alt="" class="icon__obj">
+                        <p class="card__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                            veritatis hic exercitationem obcaecati dolore nobis error, suscipit adipisci doloremque
+                            at repellendus tempore fugit quibusdam ex vel nulla corrupti animi? Veniam!</p>
+                    </div>
+                </div>
+                <div class="card__obj">
+
+                    <div class="cards__text__obj">
+                        <h3 class="card__title">Objetivo. <span class="numero__obj">4</span></h3>
+                        <img src="img/iconos/obj4.png" alt="" class="icon__obj">
+                        <p class="card__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                            veritatis hic exercitationem obcaecati dolore nobis error, suscipit adipisci doloremque
+                            at repellendus tempore fugit quibusdam ex vel nulla corrupti animi? Veniam!</p>
+                    </div>
+                </div>
+                <div class="card__obj">
+
+                    <div class="cards__text__obj">
+                        <h3 class="card__title">Objetivo. <span class="numero__obj">5</span></h3>
+                        <img src="img/iconos/obj5.png" alt="" class="icon__obj">
+                        <p class="card__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                            veritatis hic exercitationem obcaecati dolore nobis error, suscipit adipisci doloremque
+                            at repellendus tempore fugit quibusdam ex vel nulla corrupti animi? Veniam!</p>
+                    </div>
+                </div>
+                <div class="card__obj">
+
+                    <div class="cards__text__obj">
+                        <h3 class="card__title">Objetivo. <span class="numero__obj">6</span></h3>
+                        <img src="img/iconos/obj6.png" alt="" class="icon__obj">
+                        <p class="card__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                            veritatis hic exercitationem obcaecati dolore nobis error, suscipit adipisci doloremque
+                            at repellendus tempore fugit quibusdam ex vel nulla corrupti animi? Veniam!</p>
+                    </div>
+                </div>
+                <div class="card__obj">
+
+                    <div class="cards__text__obj">
+                        <h3 class="card__title">Objetivo. <span class="numero__obj">7</span></h3>
+                        <img src="img/iconos/obj7.png" alt="" class="icon__obj">
+                        <p class="card__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                            veritatis hic exercitationem obcaecati dolore nobis error, suscipit adipisci doloremque
+                            at repellendus tempore fugit quibusdam ex vel nulla corrupti animi? Veniam!</p>
+                    </div>
+                </div>
+                <div class="card__obj">
+
+                    <div class="cards__text__obj">
+                        <h3 class="card__title">Objetivo. <span class="numero__obj">8</span></h3>
+                        <img src="img/iconos/obj8.png" alt="" class="icon__obj">
+                        <p class="card__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                            veritatis hic exercitationem obcaecati dolore nobis error, suscipit adipisci doloremque
+                            at repellendus tempore fugit quibusdam ex vel nulla corrupti animi? Veniam!</p>
+                    </div>
+                </div>
+
+
+            </article>
+        </section>
+        <div class="sub-title">
+            <h2 class="subtitle">Nuestros clientes<span class="point">.</span> </h2>
+            <p class="copy__section">Porque no somos nada sin nuestros clientes, acá resultados con ellos.</p>
+        </div>
+        <section class="testimonios__container container">
+            <div class="container__testimonio">
+
+                <div class="testimonio__cart">
+                    <div class="img_testimonio img1">
+                        <img src="img/compu4.jpg" alt="" class="testimonio__img">
+                    </div>
+                    <div class="testimonio__text tx1">
+                        <h4> Cliente 1</h4>
+                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam sint iusto laborum iste
+                            sit cupiditate ipsa sed quos, minima ullam ea, odit unde? Pariatur culpa libero ullam
+                            tempora atque molestias? </p>
+                    </div>
+                </div>
+                <div class="testimonio__cart">
+                    <div class="img_testimonio img2">
+                        <img src="img/compu3.jpg" alt="" class="testimonio__img">
+                    </div>
+                    <div class="testimonio__text tx2">
+                        <h4> Cliente 2</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cumque sapiente laborum fuga,
+                            officia</p>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <div class="sub-title">
+            <h2 class="subtitle">Contacto<span class="point">.</span> </h2>
+            <p class="copy__section">Contactanos para tener el placer de comunicarnos.</p>
+        </div>
+        <div class=" container">
+            <div class="container__contacto">
+
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60058.211240669596!2d-74.1462187330723!3d4.622454086297266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1644274291933!5m2!1ses!2sco"
+                    width="500" height="570" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="formulario_home">
+                <div class="formulario">
+                    <h2 style="text-align: center; ">Ingresa tus datos</h2>
+                    </br>
+                    <form action="">
+            
+                        <label for="nombre1">Nombre Completo</label>
+                        <input type="text" value="" id="nombre1" required>
+                        </br>
+                        </br>
+                        <label for="apellido1">Cédula</label>
+                        <input type="number" value="" id="apellido1" required>
+                        </br>
+                        </br>
+                        <label for="">Contraseña</label>
+                        <input type="password" value="">
+                        </br>
+                        </br>
+                        <label for="">Correo</label>
+                        <input type="email" value="">
+                        </br>
+                        </br>
+                        <label for="">Comentario</label>
+                        <textarea></textarea>
+            
+                        </br>
+                        </br>
+                        <label for="">Selecciona el Genero</label>
+                        <select name="OS">
+                            <option selected value="0"> Elige una opción </option>
+            
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                            <option value="3">Otro</option>
+                        </select>
+                        </br>
+                        </br>
+                        <input type="submit" value="Envia tus datos">
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+
+    <!--
+    <nav>
+        <ul>
+            <il> <a href="index.html">Home</a> </il>
+            <il><a href="pages/sobre_nosotros.html">Sobre Nosotros</a></il>
+            <il><a href="pages/galeria.html">Galeria</a></il>
+            <il><a href="pages/portafolio.html">Portafolio</a></il>
+            <il><a href="pages/contacto.html">Contacto</a></il>
+        </ul>
+    </nav>
+    <h1 style="font-size: 75px; text-align: center;">Página de Inicio</h1>
+    <div style="text-align: center;">
+
+        <h2>Pruebas en clase</h2>
+
+        <img src="img/Compu1.jpg" width="250px">
+        </span>
+    </div>
+
+    <div class="lista">
+        <ul>
+            <li>Cristian</li>
+            <li>David</li>
+            <li>Mauricio</li>
+            <li>Laura</li>
+            <li>Luisa</li>
+        </ul>
+        <ol>
+            <li>Levantar</li>
+            <li>Mover</li>
+            <li>Probar</li>
+            <li>Consumir</li>
+            <li>Terminar</li>
+        </ol>
+        <ol>
+            <li>Primero</li>
+            <ul>
+                <li>Primero del primero</li>
+                <li>Segundo del primero</li>
+                <li>Tercero del primero</li>
+            </ul>
+            <li>Segundo</li>
+            <ul>
+                <li>Primero del Segundo</li>
+                <li>Segundo del Segundo</li>
+                <li>Tercero del Segundo</li>
+            </ul>
+
+        </ol>
+
+    </div>
+    <div class="tabla">
+        <table>
+            <tr class="row">
+                <th class="col">Nombre</th>
+                <th class="col">Apellido</th>
+                <th class="col">Numero</th>
+            </tr>
+            <tr class="row">
+                <td class="col">Cristian</td>
+                <td class="col">Nustes</td>
+                <td class="col">252525</td>
+            </tr>
+            <tr class="row">
+                <td class="col">Andrea</td>
+                <td class="col">Rodriguez</td>
+                <td class="col">85858585</td>
+            </tr>
+            <tr class="row">
+                <td class="col">Juan</td>
+                <td class="col">Manuel</td>
+                <td class="col">968574</td>
+            </tr>
+        </table>
+    </div>
+
+    Formulario
+    <div class="formulario">
+        <h2 style="text-align: center;">Ingresa tus datos</h2>
+        </br>
+        <form action="">
+
+            <label for="nombre1">Nombre Completo</label>
+            <input type="text" value="" id="nombre1" required>
+            </br>
+            </br>
+            <label for="apellido1">Cédula</label>
+            <input type="number" value="" id="apellido1" required>
+            </br>
+            </br>
+            <label for="">Contraseña</label>
+            <input type="password" value="">
+            </br>
+            </br>
+            <label for="">Correo</label>
+            <input type="email" value="">
+            </br>
+            </br>
+            <label for="">Comentario</label>
+            <textarea></textarea>
+
+            </br>
+            </br>
+            <label for="">Selecciona el Genero</label>
+            <select name="OS">
+                <option selected value="0"> Elige una opción </option>
+
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+                <option value="3">Otro</option>
+            </select>
+            </br>
+            </br>
+            <input type="submit" value="Envia tus datos">
+        </form>
+    </div>
+    -->
+    <!--Boton Flotante de wp-->
+
+
+
+
+
+
+    <footer style="background-color: #000000; color: #ffffff; text-align: center; padding: auto;">
+        <div class="container-boton">
+            <a href="https://wa.link/7jwmxq" target="_blank">
+                <img class="whastapp__float" src="img/iconos/whatsapp_float.png" alt="wp Cristian" width="35px">
+            </a>
+        </div>
+
+        <a href="index.html">
+            <img src="img/logo.png" width="150">
+        </a>
+        <nav>
+            <ul>
+                <il> <a href="index.html">Home</a> </il>
+                <il><a href="pages/sobre_nosotros.html">Sobre Nosotros</a></il>
+                <il><a href="pages/galeria.html">Galeria</a></il>
+                <il><a href="pages/portafolio.html">Portafolio</a></il>
+                <il><a href="pages/contacto.html">Contacto</a></il>
+            </ul>
         </nav>
-    </header>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"></script>
+        <p style="font-size: 14px;"> Todos los derechos reservados 2022 Cristian Ñustes</p>
+
+
+
+    </footer>
+
 </body>
+
+
 </html>

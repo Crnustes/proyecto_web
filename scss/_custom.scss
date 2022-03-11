@@ -1,3 +1,5 @@
+
+
 // variables de colores
 
 $azul: rgb(105, 247, 205);
@@ -19,5 +21,565 @@ $black:    #000;
 $primary:$azul;
 $secondary:$gris;
 
-// conectando con boostrap
-@import "/node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap");
+
+/*-----------------Estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 63px;
+}
+h2 {
+    font-size: 48px;
+    line-height: 50px;
+}
+h3 {
+    font-size: 35px;
+    line-height: 38px;
+}
+h4 {
+    font-size: 28px;
+}
+p {
+    font-size: 15px;
+
+    margin: auto;
+}
+
+/*------- Estilo global botones--*/
+
+.botones {
+    margin: auto;
+    font-size: 17px;
+    background-color: rgb(105, 247, 205);
+    width: 250px;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 3px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.botones:hover {
+    color: rgb(66, 168, 250);
+    background-color: rgb(0, 0, 0);
+}
+/* --------------------Boton Flotante*/
+
+.container-boton {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    line-height: 75px;
+    bottom: 40px;
+    right: 40px;
+    background-color: rgb(105, 247, 205);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+.container-boton:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #fff;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+/* --------------------Estilos del Menú*/
+li,
+a {
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu_principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: #000;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.cta img {
+    width: 35px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    border: none;
+}
+.logoImg {
+    cursor: pointer;
+    width: 80%;
+}
+
+.nav__links {
+    list-style: none;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav__links li a {
+    transition: all 0.1 ease 0s;
+}
+.nav__links li a:hover {
+    color: aqua;
+    font-size: 15px;
+}
+.nav__links li a:active {
+    color: aqua;
+    font-size: 15px;
+}
+
+/*------------Estilos del banner ppl-----*/
+
+.contenedor {
+    display: flex;
+    max-width: 100%;
+    height: 80vh;
+    background-image: url(../img/fondoBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    margin-bottom: 80px;
+}
+.contenedor .wrap {
+    width: 1000px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+.contenedor .wrap .box {
+    flex-basis: 50%;
+    text-align: left;
+    align-self: center;
+    background-color: rgba(253, 253, 253, 0.678);
+    padding: 50px;
+    border-radius: 25px;
+}
+
+/*------Estilo sub-titulos-----*/
+
+.sub-title {
+    text-align: center;
+    margin: auto;
+    padding: 120px;
+    background-image: url(../img/fondo-subtitulos.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/*------------------Estilos servicios*/
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+.container_cards {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+.card {
+    width: 350px;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 15px;
+    box-shadow: #000;
+    margin: 20px auto;
+    background-color: rgba(4, 80, 110, 0.164);
+}
+.card p {
+    text-align: justify;
+}
+
+/*------------Objetivos--------*/
+
+.container-bg {
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.card__obj {
+    border: 1px solid #000;
+    background-color: #3f3f3f;
+    padding: 15px;
+    text-align: justify;
+    margin: 5px;
+    color: #fff;
+    box-shadow: #000 2px 2px;
+    width: 280px;
+}
+.card__title {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+}
+.numero__obj {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+/*----------Testimonios ----*/
+
+.container__testimonio {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-self: center;
+    align-content: center;
+}
+.testimonio__cart {
+    width: 100%;
+
+    margin: 10px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.testimonio__cart img {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: #000 2px 2px;
+}
+
+.testimonio__text {
+    margin: 20px;
+    width: 650px;
+}
+
+.testimonio__text h4 {
+    font-size: 35px;
+    margin: 20px;
+}
+
+.img1 {
+    order: 1;
+}
+.img1 {
+    order: 2;
+}
+.testimonio__text p {
+    text-align: justify;
+}
+/*--------Formulario de contacto---*/
+
+.formulario {
+    color: #ffffff;
+
+    text-align: left;
+    margin: 0;
+    width: 650px;
+    padding: 50px;
+
+    background-color: #35e4e442;
+}
+
+input {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    width: 250px;
+}
+
+select {
+    width: 250px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+/*--------------------Formulario del home-----------------*/
+.container__contacto {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-self: center;
+    align-content: center;
+    margin-bottom: 80px;
+    background-image: url(../img/fondoContacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa {
+    display: flex;
+    width: 550px;
+}
+.formulario_home {
+    display: flex;
+    width: 550px;
+    margin-left: 10px;
+}
+
+/* ----------------------------------- ESTILO DE PORTAFOLIO CON GRID--------------------------------*/
+.headerG {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+.navbarG {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    padding: 0 5%;
+    background-color: #000;
+    height: auto;
+}
+.navbarG .logoG {
+    cursor: pointer;
+    width: 80%;
+    grid-column: 1/2;
+    padding-left: 20px;
+}
+.navbarG .menuG {
+    grid-column: 3/8;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.navbarG .menuG li {
+    list-style: none;
+
+    padding: 0 15px;
+    text-align: center;
+}
+.navbarG .menuG li a {
+    transition: all 0.1 ease 0s;
+}
+.navbarG .menuG li a:hover {
+    color: aqua;
+    font-size: 15px;
+}
+
+.navbarG .logosG {
+    grid-column: 9/12;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuhamburger {
+    display: none;
+}
+/* -------------Banner del grid------------------*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 90%;
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+.parrafo {
+    margin-bottom: 20px;
+}
+.banner {
+    height: 600px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.img-hero {
+    width: 100%;
+    height: auto;
+    grid-column: 7/13;
+}
+.img-hero img {
+    width: 95%;
+    max-width: 600px;
+}
+.textos-hero {
+    grid-column: 1/7;
+    padding: 50px;
+}
+.textos-hero h1 {
+    margin-bottom: 10px;
+}
+
+/* -------------Los tres servicios------------------*/
+
+.servicesG {
+    margin: auto;
+    max-width: 85%;
+    border-radius: 250px 100px 250px 100px;
+    height: 470px;
+    background: rgb(130, 247, 215);
+    background: linear-gradient(90deg, rgba(130, 247, 215, 1) 0%, rgba(99, 191, 244, 1) 50%, rgba(9, 9, 151, 1) 100%);
+}
+.items {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: rgba(230, 230, 230, 0.123);
+    text-align: center;
+    width: 30%;
+    box-shadow: 7px 10px 31px 5px rgba(0, 0, 0, 0.67);
+    overflow: hidden;
+    height: auto;
+    padding: 30px;
+}
+.item img {
+    width: 80%;
+    height: 100px;
+}
+.titulo-services {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+/* -------------Acerca de nosotros------------------*/
+
+.about-us {
+    margin: auto;
+    max-width: 85%;
+    border-radius: 30px;
+    margin-top: 50px;
+
+    height: 350px;
+    padding-bottom: 60px;
+}
+.textos-about-us {
+    grid-column: 1/-1;
+    text-align: center;
+}
+.textos-about-us .parrafo {
+    margin-top: 10px;
+}
+.numbers {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.number {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    width: 30%;
+    padding: 80px;
+    background-image: url(../img/fondo-subtitulos.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* -------------Mision------------------*/
+
+.mission {
+    padding: 80px 0;
+}
+.textos-mission {
+    grid-column: 7/13;
+    grid-row: 1/-1;
+}
+
+.img-mission {
+    grid-column: 1/7;
+    grid-row: 1/-1;
+}
+.img-mission img {
+    width: 100%;
+}
+.texto-mission {
+    padding: 10px;
+}
+
+/* --------------------------------------CSS DE LOS MEDIA PARA EL RESPONSIVE-----------------------------------*/
+
+@media screen and (max-width: 930px) {
+    .navbarG .menuG {
+        display: none;
+    }
+    .menuhamburger {
+        display: block;
+        width: 60px;
+        grid-column: 10/11;
+        grid-row: 1/-1;
+    }
+    .navbarG .logoG {
+        width: 100px;
+        grid-column: 2/4;
+        grid-row: 1/-1;
+    }
+    .navbarG .logosG {
+        grid-column: 6/7;
+        display: flex;
+        justify-content: space-around;
+        grid-row: 1/-1;
+    }
+    .numbers {
+        display: flex;
+
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .number {
+        font-size: 15px;
+        width: 30%;
+        text-align: center;
+        margin: auto;
+    }
+    .servicesG {
+        display: flex;
+        flex-flow: row wrap;
+        align-self: center;
+        justify-content: space-around;
+        align-content: center;
+        height: auto;
+    }
+    .item {
+        width: 300px;
+        
+    }
+    .menuG{
+        display: none;
+    }
+    .menuhamburgerIndex{
+        display: block;
+    }
+}
+@media screen and (max-width: 600px){
+
+}
