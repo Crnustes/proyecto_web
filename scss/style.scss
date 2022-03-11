@@ -1,1 +1,23 @@
 @use 'custom';
+
+// componentes separados
+@use 'components/botones';
+@use 'components/formulario';
+@use 'components/fuentes';
+
+// paginas
+
+@use 'pages/galeria';
+@use 'pages/index';
+@use 'pages/contacto';
+@use 'pages/portafolio';
+@use 'pages/sobre';
+
+
+/*-----------------Estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
